@@ -4,6 +4,7 @@ import { createStore } from 'redux'
 import reducer from './Reducers'
 
 import Counter from './Counter';
+import CounterView from './CounterView';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <Provider store={store}> 
       <div>Hello React!</div>
+      <CounterView />
       <Counter />
     </Provider>
   )
